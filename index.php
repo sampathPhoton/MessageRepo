@@ -4,14 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Title</title>
 	<script>
-        function getToastMessage() {
-            return document.getElementById('toastMessage').value;
-        }
-        function concatenateStrings(arg1, arg2) {
-            return arg1 + arg2;
-        }
-        function showToast() {
-            MyJavascriptInterface.showToast(getToastMessage());
+
+        function sendPersonalizedData() {
+            var personalizedData = "{ \"status\": \"success\"}"
+            PersonalizedDataInterface.sendPersonalizedData(personalizedData);
         }
     </script>
 </head>
@@ -24,7 +20,7 @@
 		<input id="toastMessage" type="text" placeholder="Toast message"/>
 	</div>
 	<div style="margin-top: 50px;">
-		<button id="showToast" type="button" onclick="showToast()">Show toast</button>
+		<button id="showToast" type="button" onclick="sendPersonalizedData()">Send Data</button>
 	</div>
 </div>
 </body>
