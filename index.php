@@ -20,6 +20,9 @@
                 PersonalizedDataInterface.sendPersonalizedData(personalizedData);
             }
         }
+        function editInformation(personalizedData) {
+            document.getElementById("editInformation").innerHTML = personalizedData
+        }
     </script>
 </head>
 <body>
@@ -28,6 +31,7 @@
 	<div style="margin-top: 50px;">
 		<button width="200px" height="70px" id="showToast" type="button" onclick="sendPersonalizedData()">Send Data</button>
 	</div>
+	<div id="editInformation"></div>
 </div>
 </body>
 </html>
