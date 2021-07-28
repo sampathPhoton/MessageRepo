@@ -13,6 +13,8 @@
             '"Grip Installation": "Installed - Standard","Gender": "Mens","Includes": "8","Tipping": "Standard"},'+
             '"sku": {"Shaft": "steel","Includes": "8"},"totalPrice": "1000.00"}},"actions": {"Postmessage": []}}'
             PersonalizedDataInterface.sendPersonalizedData(personalizedData);
+
+            window.webkit.messageHandlers.jsMessageHandler.postMessage(personalizedData);
         }
     </script>
 </head>
