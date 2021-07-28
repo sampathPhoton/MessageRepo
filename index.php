@@ -21,8 +21,7 @@
             }
         }
         function editInformation(customData) {
-            alert("hi")
-            document.getElementById("editInformation").innerHTML = customData
+            document.getElementById("editInformation").innerHTML = JSON.stringify(customData)
         }
     </script>
 </head>
