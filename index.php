@@ -15,7 +15,7 @@
 <div style="max-width:960px; margin: auto; text-align:center;">
 
 	<div style="margin-top: 50px;">
-		<button id="showToast" type="button" onclick="sendPersonalizedData()">Send Data</button>
+		<button width="200px" height="70px" id="showToast" type="button" onclick="sendPersonalizedData()">Send Data</button>
 	</div>
 </div>
 </body>
