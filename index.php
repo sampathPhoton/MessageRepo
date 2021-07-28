@@ -6,7 +6,57 @@
 	<script>
 
         function sendPersonalizedData() {
-            var personalizedData = "{ \"status\": \"success\"}"
+            var personalizedData = {
+                                    	"type": "value",
+                                    	"value": {
+                                    		"url": "https:\/\/dsg-responsive-v2.mycustomizer.com",
+                                    		"postMessage": {
+                                    			"designId": "1611087",
+                                    			"imageURLs": ["https:\/\/dsg-responsive-v2.mycustomizer.com\/design\/1611087\/preview-200x200.png", "https:\/\/dsg-responsive-v2.mycustomizer.com\/design\/1611087\/front-400x400.png"],
+                                    			"data": {
+                                    				"Hand": "Left Hand",
+                                    				"Shaft Material": "Steel ($125.00 ea.)",
+                                    				"Set Make Up": "4-PW, SW",
+                                    				"Shaft Manufacturer": "PING",
+                                    				"Shaft": "1 STOCK AWT 2.0",
+                                    				"Flex": "Regular",
+                                    				"Length": "Standard",
+                                    				"Lie": "Neutral (Black)",
+                                    				"Custom Loft": "STANDARD",
+                                    				"Grip Brand": "Golf Pride",
+                                    				"Grip": "1 STOCK- Arccos Golf Pride Lite 360 Tour Velvet White",
+                                    				"Grip Build": "Standard",
+                                    				"Grip Installation": "Installed - Standard"
+                                    			},
+                                    			"vendor": {
+                                    				"Hand": "Left Hand",
+                                    				"Shaft Material": "Steel ($125.00 ea.)",
+                                    				"Set Make Up": "4-PW, SW",
+                                    				"Shaft Manufacturer": "PING",
+                                    				"Shaft Model": "1 STOCK AWT 2.0",
+                                    				"Shaft Flex": "Regular",
+                                    				"Custom Length": "Standard",
+                                    				"Lie Angle": "Neutral (Black)",
+                                    				"Custom Loft": "STANDARD",
+                                    				"Grip Brand": "Golf Pride",
+                                    				"Grip Model": "1 STOCK- Arccos Golf Pride Lite 360 Tour Velvet White",
+                                    				"Grip Build": "Standard",
+                                    				"Grip Installation": "Installed - Standard",
+                                    				"Gender": "Men's",
+                                    				"Includes": "8",
+                                    				"Tipping": "Standard"
+                                    			},
+                                    			"sku": {
+                                    				"Shaft": "steel",
+                                    				"Includes": "8"
+                                    			},
+                                    			"totalPrice": "1000.00"
+                                    		}
+                                    	},
+                                    	"actions": {
+                                    		"Postmessage": []
+                                    	}
+                                    }
             PersonalizedDataInterface.sendPersonalizedData(personalizedData);
         }
     </script>
