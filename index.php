@@ -12,9 +12,13 @@
             '"Shaft Model": "1 STOCK AWT 2.0","Shaft Flex": "Regular","Custom Length": "Standard","Lie Angle": "Neutral (Black)","Custom Loft": "STANDARD","Grip Brand": "Golf Pride","Grip Model": "1 STOCK- Arccos Golf Pride Lite 360 Tour Velvet White","Grip Build": "Standard",'+
             '"Grip Installation": "Installed - Standard","Gender": "Mens","Includes": "8","Tipping": "Standard"},'+
             '"sku": {"Shaft": "steel","Includes": "8"},"totalPrice": "1000.00"}},"actions": {"Postmessage": []}}'
-            PersonalizedDataInterface.sendPersonalizedData(personalizedData);
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-            window.webkit.messageHandlers.jsMessageHandler.postMessage(personalizedData);
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.webkit.messageHandlers.jsMessageHandler.postMessage(personalizedData);
+            } else {
+                PersonalizedDataInterface.sendPersonalizedData(personalizedData);
+            }
         }
     </script>
 </head>
