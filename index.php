@@ -21,6 +21,7 @@
             }
         }
         function editInformation(customData) {
+            alert("hi")
             document.getElementById("editInformation").innerHTML = customData
         }
     </script>
