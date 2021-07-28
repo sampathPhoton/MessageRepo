@@ -6,7 +6,7 @@
 	<script>
 
         function sendPersonalizedData() {
-            var personalizedData = {
+            var personalizedData = '{
                                     	"type": "value",
                                     	"value": {
                                     		"url": "https:\/\/dsg-responsive-v2.mycustomizer.com",
@@ -42,7 +42,7 @@
                                     				"Grip Model": "1 STOCK- Arccos Golf Pride Lite 360 Tour Velvet White",
                                     				"Grip Build": "Standard",
                                     				"Grip Installation": "Installed - Standard",
-                                    				"Gender": "Men's",
+                                    				"Gender": "Mens",
                                     				"Includes": "8",
                                     				"Tipping": "Standard"
                                     			},
@@ -56,7 +56,7 @@
                                     	"actions": {
                                     		"Postmessage": []
                                     	}
-                                    }
+                                    }'
             PersonalizedDataInterface.sendPersonalizedData(personalizedData);
         }
     </script>
